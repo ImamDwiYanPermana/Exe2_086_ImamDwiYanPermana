@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bg.css" />
+    <style>
+      /* Custom CSS */
+    </style>
+    <title>Kontak Restoran</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Delicious Eats</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html"
+              ><i class="fas fa-utensils"></i> Menu</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html"
+              ><i class="fas fa-images"></i> Gallery</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"
+              ><i class="fas fa-envelope"></i> Pemesanan</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bg">
+      <div class="container">
+        <div class="header">
+          <h3>Kontak Restoran Kami</h3>
+        </div>
+        <form
+          class="inp"
+          action=""
+          onsubmit="event.preventDefault(); kirimData();"
+        >
+          <label for="nama"><i class="fas fa-user"></i> Nama</label>
+          <input
+            type="text"
+            placeholder="Nama Anda"
+            id="nama"
+            required
+          /><br /><br />
+
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input
+            type="email"
+            placeholder="Email Anda"
+            id="email"
+            required
+          /><br /><br />
+
+          <label for="telepon"
+            ><i class="fas fa-phone"></i> Nomor Telepon</label
+          >
+          <input
+            type="tel"
+            placeholder="Nomor Telepon Anda"
+            id="telepon"
+            required
+          /><br /><br />
+
+          <label for="tanggal"
+            ><i class="fas fa-calendar"></i> Tanggal Reservasi</label
+          >
+          <input
+            type="text"
+            placeholder="Pilih Tanggal"
+            id="tanggal"
+            required
+          /><br /><br />
+
+          <label for="jumlah-orang"
+            ><i class="fas fa-users"></i> Jumlah Orang</label
+          >
+          <input
+            type="number"
+            placeholder="Jumlah Orang"
+            id="jumlah-orang"
+            required
+          /><br /><br />
+
+          <label for="pesan"><i class="fas fa-comment"></i> Pesan</label>
+          <textarea
+            placeholder="Tulis pesan atau permintaan khusus Anda di sini"
+            name="pesan"
+            id="pesan"
+            cols="30"
+            rows="5"
+            required
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">
+            <i class="fas fa-paper-plane"></i> Pesan Sekarang
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
